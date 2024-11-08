@@ -1,0 +1,9 @@
+<input type="text"
+[placeholder]="placeholder"
+(keyup.enter)="emmitValue(txtInput.value)"
+class="form-control"
+#txtInput
+>
+<!--#txtInput esto es el input en si, puede hacerse un @ViewChild('txtInput') desde el .ts
+pero tambien puede hacerse directamente como aqui está marcado
+-->
