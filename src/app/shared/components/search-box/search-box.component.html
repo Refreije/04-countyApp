@@ -1,7 +1,9 @@
+<!-- (keyup.enter)="emmitValue(txtInput.value)" -->
 <input type="text"
 [placeholder]="placeholder"
-(keyup.enter)="emmitValue(txtInput.value)"
 class="form-control"
+[value]="initialValue"
+(keyup)="onKeyPress(txtInput.value)"
 #txtInput
 >
 <!--#txtInput esto es el input en si, puede hacerse un @ViewChild('txtInput') desde el .ts
